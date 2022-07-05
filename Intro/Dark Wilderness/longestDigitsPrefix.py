@@ -8,3 +8,8 @@ def solution(inputString):
         else:
             return inputString[:i]
     return inputString
+
+# solution using re
+import re
+def solution(inputString):
+    return re.findall('^\d*',inputString)[0]
